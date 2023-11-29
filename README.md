@@ -1,0 +1,3 @@
+- 👋 Hi, I’m @ultnam
+- currently learning
+- feel free to contact me!
