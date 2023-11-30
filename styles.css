@@ -1,0 +1,125 @@
+a {
+    font-family: "Manrope", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    top: 3px;
+    margin: 0 10px;
+}
+
+.navtitle {
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 1em;
+
+}
+
+.sub {
+    font-family: "Manrope", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.sub2 {
+    font-weight: bold;
+    font-family: "Manrope", sans-serif;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 30vh;
+    padding-left: 10vh;
+}
+
+.sub3{
+    font-weight: 200;
+    font-family: "Manrope", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.hover-underline-animation {
+    position: relative;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff1a1a;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.gradient-text{
+    font-family:"Manrope", sans-serif;
+    background: linear-gradient(315deg, #ff1a1a 0%, #ffff00 74%);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+}
+  .gradient-text:hover{
+    color:rgba(0,0,0,0);
+}
+  @keyframes rainbow { 
+    0%{background-position:left}
+    50%{background-position:right}
+    100%{background-position:left}
+}
+
+.vl {
+    border-left: 2px solid rgb(255, 255, 255);
+    height: 700px;
+    margin: 0 20px;
+}
+
+/* .vertical-line {
+    border-left: 2px solid white;
+    height: 500px;
+    margin: 0 20px;
+} */
+
+/* .animated-background {
+    background: -webkit-linear-gradient(right, #833ab4, #fd1d1d, #fcb045);
+    background-size: 400% 400%;
+    animation: "animate-background" 5s infinite ease-in-out;
+}
+
+@keyframes animate-background {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+} */
