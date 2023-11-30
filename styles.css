@@ -67,7 +67,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ff1a1a;
+    background: linear-gradient(#ff1a1a, #ffff00);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -85,7 +85,7 @@ body {
     background-clip: text;
     -webkit-background-clip:text;
 }
-  .gradient-text:hover{
+  .gradient-text{
     color:rgba(0,0,0,0);
 }
   @keyframes rainbow { 
@@ -96,15 +96,36 @@ body {
 
 .vl {
     border-left: 2px solid rgb(255, 255, 255);
-    height: 700px;
+    height: 100px;
     margin: 0 20px;
 }
 
-/* .vertical-line {
-    border-left: 2px solid white;
-    height: 500px;
-    margin: 0 20px;
-} */
+@keyframes identifier {
+    
+}
+
+.emoji-hover {
+    position: relative;
+  }
+
+.emoji-hover::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+  
+    /* Add your desired emoji using its Unicode */
+    content: '👋👋👋'; /* This is the smiling face emoji */
+  }
+  
+  /* Show the emoji on hover */
+  .emoji-hover:hover::after {
+    opacity: 1;
+  }
 
 /* .animated-background {
     background: -webkit-linear-gradient(right, #833ab4, #fd1d1d, #fcb045);
